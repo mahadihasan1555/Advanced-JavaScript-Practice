@@ -9,6 +9,25 @@ console.log(c); // undefined
 var d = {};
 console.log(d.fake); // undefined
 
+function add(num1, num2){
+    console.log(num1 + num2);
+}
+const result = add(12, 23);
+console.log(result); //undefined
+
+function add(num1, num2){
+    console.log(num1, num2);
+}
+const result = add(12);
+console.log(result); //undefined
+
+const name1 = { name: "mahadi", id: 123};
+console.log(name1.phone); //undefined
+
+let ages = [1, 2, 3, 4];
+console.log(ages[12]);  //undefined
+
+
 
 
 //null is an empty or non-existent value.
@@ -25,4 +44,4 @@ console.log(typeof(a)); //object
 // null === undefined // false
 // null == undefined // true
 // null === null // true
-// and
+
